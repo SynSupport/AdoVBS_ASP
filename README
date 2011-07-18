@@ -1,0 +1,15 @@
+Author:	Patrick Crever
+	patrick.crever@synergex.com
+
+Minimum Synergy Version 
+7.3.1b
+
+Description:
+VBScript/ADO on ASP examples.  Two examples are provided; AdoVB_Select.asp and AdoVB_Update.asp.
+
+AdoVB_Select.asp and AdoVB_Update.asp are performance focused. The VBScript code is located within the HTML HEAD section in a single server-side code block and Response.Buffer is set to true. Server-side code written in this manner finishes to completion before sending the document to the browser. Error trapping is obtained by using ON ERROR RESUME NEXT and every ADO operation is followed by a call to CheckAdoError subroutine. The select example connects to the database, fills a recordset with the contents of the Plants table, and returns the recordset in an HTML TABLE. The update example fetches the "Sour Gum" rows from the Plants table, display the current values, updates the price by 10%, re-fetches and displays the new values.
+
+To run these examples, make sure there is an xfODBC DSN, copy the files to the web server and access them via your browser e.g. <http://pax/AdoVB_Select.asp>
+
+
+*** Code is for use 'AS IS' ***
